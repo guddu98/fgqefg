@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        /* .smartphnoe{
+            width: 300px;
+            height: 500px;
+            margin: 20px auto;
+            border-left: 5px solid black;
+            border-right: 5px solid black;
+            border-top: 35px solid black;
+            border-bottom: 35px solid black;
+            border-radius: 20px;
+        } */
+         .smartphnoe{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+         }
+         .text{
+            font-size: 50px;
+            color: red;
+         }
+         button{
+            padding: 10px;
+            width: 150px;
+            background-color: brown;
+            color: white;
+         }
+    </style>
+</head>
+<body>
+    <div class="smartphnoe">
+        <p class="text">Click to see</p>
+        <button onclick="changetext()">Click</button>
+    </div>
+    <script>
+        function changetext(){
+            document.querySelector('.text').innerHTML="Happy Birthday"
+        }
+    </script>
+</body>
+</html>
